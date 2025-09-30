@@ -16,14 +16,14 @@ body {
 }
 
 #couple-names {
-    font-family: 'Yessica Regular', sans-serif;
+    font-family: 'Quintessential', sans-serif;
     font-size: 3em;
     color: #493628;
     margin-bottom: 20px;
 }
 
 h1 {
-   font-family: "Quintessential", serif;
+   font-family: "Yessica Regular", serif;
   font-weight: 400;
   font-style: normal;
   }
@@ -36,7 +36,7 @@ h1 {
 .hero-section {
     background-image: url('');
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background-color: #D6C0B3;
     position: relative;
 }
@@ -56,14 +56,15 @@ h1 {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
     box-sizing: border-box;
     background-color: #493628;
 }
@@ -78,6 +79,7 @@ h1 {
     list-style: none;
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .nav-links a {
@@ -363,6 +365,9 @@ h1 {
     cursor: pointer;
     padding: 10px;
     margin-left: auto;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
 }
 
 .hamburger {
@@ -409,12 +414,14 @@ h1 {
     }
     .nav-links.open {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .nav-toggle {
         display: block;
     }
     .navbar {
-        position: relative;
+        position: fixed;
         flex-direction: row;
         align-items: center;
     }
@@ -474,4 +481,36 @@ h1 {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+}
+
+/* For Our Story main heading and paragraph */
+main.section > h1,
+main.section > p {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    background: #faf9f6;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(171,136,109,0.08);
+}
+
+/* For How We Met and Proposal story blocks */
+.story-content .text-block {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    background: #faf9f6;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(171,136,109,0.08);
+}
+
+/* Optional: Make images inside story blocks fit the box */
+.story-content .text-block img {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 250px;
+    width: 100%;
+    border-radius: 10px;
 }
