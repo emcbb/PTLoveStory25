@@ -1,4 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
 
+nav{
+    position: fixed;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #AB886D;
+}
+
+#couple-names {
+    font-family: 'Quintessential', sans-serif;
+    font-size: 3em;
+    color: #493628;
+    margin-bottom: 20px;
+}
+
+h1 {
+   font-family: "Yessica Regular", serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #493628;
+  }
 
  h2, h3 {
     font-family: 'Yessica Regular', sans-serif;
