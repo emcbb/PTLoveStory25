@@ -104,8 +104,15 @@ h1 {
 }
 
 .hero-content h1 {
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 0.5em;
+}
+
+/* Make the hero-content paragraph font larger */
+.hero-content p {
+    font-size: 1.25em; /* Increase as desired (default is usually 1em) */
+    line-height: 1.5;
+    color: #1D1616;
 }
 
 .rsvp-btn {
@@ -629,7 +636,7 @@ main.section > p,
 
     /* 3. If you have separate styles for the name lines, apply reduction there too: */
     #couple-names {
-        font-size: 2em; /* Reduced from 3em */
+        font-size: 3em; /* Reduced from 4em */
     }
 }
 
