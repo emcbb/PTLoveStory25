@@ -526,12 +526,12 @@ h1 {
 main.section > h1,
 main.section > p,
 .story-content .text-block {
-    /* Original styles */
-    text-align: left;
-    max-width: 1000px; /* INCREASE THIS VALUE for a wider column */
+    /* Existing Styles: */
+    text-align: justify; /* <-- Changed from left to justify for straight edges */
+    max-width: 1000px;
+    padding: 24px 32px; 
     margin: 0 auto 2rem auto;
     background: #faf9f6;
-    padding: 24px 32px;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(171,136,109,0.08);
 }
