@@ -13,7 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
 <link href="https://db.onlinewebfonts.com/c/786877b735996b1e847aa9d9bdf278bd?family=Yessica+Regular" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Felipa&family=Fleur+De+Leah&family=Passions+Conflict&family=Quintessential&display=swap" rel="stylesheet">
-
+<!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- Navbar (copy from index.html for consistency) -->
@@ -34,8 +35,16 @@
     <main class="section">
         <h1>Our Story</h1>
         <p>We are thrilled to share our love story with you. Our journey together has been filled with beautiful moments and cherished memories. This website is a perfect place for us to narrate our story and express our gratitude for your presence in our lives.</p>
-        <div class="image-gallery">
-            <img src="WhatsApp Image 2025-09-28 at 20.24.52.jpeg" alt="Couple together">
+        <div class="swiper image-gallery">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="WhatsApp Image 2025-09-28 at 20.24.52.jpeg" alt="Couple together"></div>
+                <div class="swiper-slide"><img src="PHOTO_1.jpg" alt="Couple smiling"></div>
+                <div class="swiper-slide"><img src="PHOTO_2.jpg" alt="Couple at event"></div>
+            </div>
+            <!-- Add navigation buttons if you want -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <!-- Add more content as needed -->
 
@@ -44,7 +53,16 @@
             <div class="text-block">
                 <h2>How We Met</h2>
                 <p>We first crossed paths on boxing day of 2023 at a mutual family friend’s home. We had a few chats here and there, but nothing major. In the evening of the same day, we were sent on an errand together, where we had a nice conversation alone but still nothing serious. Fast forward to a random afternoon in August 2024 where I received a WhatsApp message from Otimeyin. What started as a random texting, quickly grew to constant calls and something special. As we got to know each other more, we realized how much we wanted to each other’s lives permanently. That random WhatsApp message blossomed into a beautiful love story, and we are ready to begin our forever.</p>
-            <img src="FAC_8552-Edit.jpg" alt="couple embracing each other">
+                <div class="swiper how-we-met-gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="peaceeyy.jpeg" alt="Laughing together"></div>
+                        <div class="swiper-slide"><img src="timmmm.jpeg" alt="First meeting"></div>
+                        <div class="swiper-slide"><img src="PHOTO_7.jpg" alt="Another moment"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </section> 
@@ -52,14 +70,23 @@
 
 
     <section id="our-proposal" class="section">
-        <div class="section-content story-content">
-            <div class="text-block">
-                <h2>Our Proposal</h2>
-                <p>It was simple, intimate, and well thought out. What I thought would be just a birthday dinner, turned into one of the best and most unforgettable birthdays of my life. We went on a birthday trip to Marrakech, which is one of my favourite holidays with my favourite person. On my Birthday, we had itineraries planned for the day, which included, Going to the famous museum, to a beach club to relax and have lunch, and then end the day with an intimate birthday dinner. After the lovely dinner, we got back to the hotel and voila, I see rose petals leading to my room , and as soon as I open the door , I see more rose petals on the floor and also used to write out ‘will you marry me’, a bunch of my favourite roses, a photographer and the hotel concierge all smiles at me. It felt Unreal. He got down on one knee and asked the question that changed everything. In that moment, it felt right, and with a heart full of joy, I said ‘YES’. I loved the fact it was how I had wanted to be proposed. An intentional man he is. This is a beautiful beginning to the journey were now on together.</p>
-            <img src="981e656e-c825-4e06-a1a7-46f47b7236ff.JPG" alt="couple photo together">
-               </div>
+    <div class="section-content story-content">
+        <div class="text-block">
+            <h2>Our Proposal</h2>
+            <p>It was simple, intimate, and well thought out. What I thought would be just a birthday dinner, turned into one of the best and most unforgettable birthdays of my life. We went on a birthday trip to Marrakech, which is one of my favourite holidays with my favourite person. On my Birthday, we had itineraries planned for the day, which included, Going to the famous museum, to a beach club to relax and have lunch, and then end the day with an intimate birthday dinner. After the lovely dinner, we got back to the hotel and voila, I see rose petals leading to my room , and as soon as I open the door , I see more rose petals on the floor and also used to write out ‘will you marry me’, a bunch of my favourite roses, a photographer and the hotel concierge all smiles at me. It felt Unreal. He got down on one knee and asked the question that changed everything. In that moment, it felt right, and with a heart full of joy, I said ‘YES’. I loved the fact it was how I had wanted to be proposed. An intentional man he is. This is a beautiful beginning to the journey were now on together.</p>
+            <div class="swiper proposal-gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="981e656e-c825-4e06-a1a7-46f47b7236ff.JPG" alt="couple photo together"></div>
+                    <div class="swiper-slide"><img src="c3068d0d-0e1a-414d-826f-0d0c2296f21a.JPG" alt="Proposal moment"></div>
+                    <div class="swiper-slide"><img src="10ac605e-bed1-4e31-ac40-87f85b423939.JPG" alt="Celebration after proposal"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
     </main>
 
     <!-- Footer (copy from index.html for consistency) -->
@@ -109,5 +136,35 @@
     <!-- ...copy modal HTML from index.html if needed... -->
 
     <script src="script.js"></script>
+    <!-- SwiperJS JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.swiper').forEach(function(el) {
+        new Swiper(el, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            speed: 600, // Smooth transition in ms (increase for slower, decrease for faster)
+            effect: 'slide', // Ensures smooth sliding
+            navigation: {
+                nextEl: el.querySelector('.swiper-button-next'),
+                prevEl: el.querySelector('.swiper-button-prev'),
+            },
+            pagination: {
+                el: el.querySelector('.swiper-pagination'),
+                clickable: true,
+            },
+            breakpoints: {
+                700: {
+                    slidesPerView: 2
+                },
+                1100: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
