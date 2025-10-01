@@ -608,3 +608,24 @@ main.section > p,
         margin-bottom: 20px;
     }
 }
+
+/* --- New Media Query for Mobile Screens (Targeting the Hero Text) --- */
+@media (max-width: 600px) {
+
+    /* 1. Reduce the font size of the couple's names */
+    .hero-content h1 {
+        font-size: 2em; /* Reduced from 3em to 2em */
+        margin-bottom: 0.2em;
+    }
+
+    /* 2. Slightly adjust the overall hero padding if needed (optional) */
+    .hero-section {
+        /* Reduce overall padding to bring the content higher */
+        padding: 100px 20px 60px 20px; 
+    }
+
+    /* 3. If you have separate styles for the name lines, apply reduction there too: */
+    #couple-names {
+        font-size: 2em; /* Reduced from 3em */
+    }
+}
