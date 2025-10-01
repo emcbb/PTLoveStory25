@@ -633,135 +633,15 @@ main.section > p,
     }
 }
 
-/* Make gallery images responsive and not oversized */
-.wedding-gallery img,
-.swiper-slide img {
-    width: 100%;         /* The image should try to take up the full container width */
-    height: 100%;        /* Changed from auto to 100% to fill container height */
-    object-fit: contain; /* Ensure the whole image is visible, may show bars */
-    border-radius: 10px;
-    display: block;
+/* Gallery Swiper Customization */
+.wedding-gallery {
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
-    transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;
 }
-
-/* Update the gallery and swiper container height */
-.wedding-gallery,
-.swiper {
-    max-width: 900px;
-    margin: 24px auto;
+.wedding-gallery .swiper-slide img {
     width: 100%;
-    min-height: 600px; /* Increased from 400px to 600px for a taller viewing area */
-}
-
-/* The rest of your code remains fine for sizing: */
-.wedding-gallery,
-.swiper {
-    max-width: 900px;
-    margin: 24px auto;
-    width: 100%;
-    min-height: 600px; /* Increased from 400px to 600px for a taller viewing area */
-}
-
-@media (max-width: 700px) {
-    .wedding-gallery img,
-    .swiper-slide img {
-        max-height: 280px;
-    }
-    .wedding-gallery,
-    .swiper {
-        max-width: 100%;
-        padding: 0 8px;
-        min-height: 280px; /* Match mobile max-height */
-    }
-}
-
-/* Enlarge gallery images on hover (desktop) and on tap (mobile) */
-.wedding-gallery img,
-.swiper-slide img {
-    transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;
-    /* ...existing styles... */
-}
-
-/* Ensure the parent slide allows the enlarged image to spill outside */
-/* This is crucial for preventing cropping on zoom */
-.swiper-slide {
-    overflow: visible; /* Allow images to spill out when zoomed */
-}
-
-/* IMPORTANT: Override the overflow when the item is active or hovered 
-   You must target the slide itself, not just the image */
-.swiper-slide:hover,
-.swiper-slide:focus-within { /* focus-within for better keyboard/tabbing support */
-    z-index: 10; 
-}
-
-/* 1. Ensure the immediate parent slide container lets the image zoom out */
-.swiper-slide {
-    z-index: 1; /* Default state */
-    overflow: visible !important; /* Prevent cropping when zoomed */
-}
-
-/* 2. Desktop: Dramatic Zoom and Z-index Increase */
-.wedding-gallery img:hover,
-.swiper-slide img:hover {
-    transform: scale(1.3) rotate(-3deg); 
-    box-shadow: 0 15px 40px rgba(171, 136, 109, 0.4);
-    transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;
-    z-index: 100;
-    cursor: pointer;
-}
-
-/* 3. CRUCIAL FIX: Increase the z-index of the PARENT SLIDE when the image is hovered */
-.swiper-slide:has(img:hover) {
-    z-index: 101;
-}
-
-/* 4. Mobile: Enlarge on tap */
-@media (max-width: 700px) {
-    .wedding-gallery img:active,
-    .swiper-slide img:active {
-        transform: scale(1.3) rotate(-3deg);
-        box-shadow: 0 15px 40px rgba(171, 136, 109, 0.4);
-        z-index: 100;
-    }
-    .swiper-slide:has(img:active) {
-        z-index: 101;
-    }
-}
-
-/* Desktop styles */
-.wedding-gallery,
-.swiper {
-    max-width: 900px;
-    margin: 24px auto;
-    width: 100%;
-    min-height: 600px;
-}
-
-.wedding-gallery img,
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Fill container, crop if needed */
     border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+    box-shadow: 0 2px 12px rgba(171, 136, 109, 0.08);
     transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;
-}
-
-/* Mobile styles */
-@media (max-width: 700px) {
-    .wedding-gallery,
-    .swiper {
-        min-height: 260px; /* Reduce height for mobile */
-        max-width: 100%;
-        padding: 0 4px;
-    }
-    .wedding-gallery img,
-    .swiper-slide img {
-        max-height: 260px; /* Prevent images from being too tall */
-        height: 100%;
-        object-fit: cover;
-    }
 }
