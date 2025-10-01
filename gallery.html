@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Gallery | Peace & Oritsetimeyin</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SwiperJS CSS for slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">P&T</div>
+        <button class="nav-toggle" aria-label="Open menu">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="our-story.html">OUR STORY</a></li>
+            <li><a href="travel-stay.html">TRAVEL & STAY</a></li>
+            <li><a href="registry.html">REGISTRY</a></li>
+            <li><a href="q-a.html">Q&A</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+    </nav>
+
+    <main class="section">
+        <h1>Wedding Photo Gallery</h1>
+        <p>Enjoy some of our favorite moments from the wedding!</p>
+        <div class="swiper wedding-gallery">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="FAC_8417.jpg" alt="Wedding moment 1"></div>
+                <div class="swiper-slide"><img src="FAC_8335-Edit.jpg" alt="Wedding moment 2"></div>
+                <div class="swiper-slide"><img src="FAC_8353-Edit.jpg" alt="Wedding moment 3"></div>
+                <div class="swiper-slide"><img src="FAC_8395-Edit.jpg" alt="Wedding moment 4"></div>
+                <!-- Add more photos as needed -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Copy your footer content here -->
+    </footer>
+
+    <!-- SwiperJS JS for slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        new Swiper('.wedding-gallery', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            speed: 600,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                700: { slidesPerView: 2 },
+                1100: { slidesPerView: 3 }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
