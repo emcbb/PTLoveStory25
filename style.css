@@ -1,44 +1,23 @@
-html {
-  scroll-behavior: smooth;
-}
 
-nav{
-    position: fixed;
-}
-
-
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #AB886D;
-}
-
-#couple-names {
-    font-family: 'Quintessential', sans-serif;
-    font-size: 3em;
-    color: #493628;
-    margin-bottom: 20px;
-}
-
-h1 {
-   font-family: "Yessica Regular", serif;
-  font-weight: 400;
-  font-style: normal;
-  }
 
  h2, h3 {
     font-family: 'Yessica Regular', sans-serif;
     font-weight: 400;
+    font-size: x-large;
+    color: #493628;
 }
 
 .hero-section {
-    background-image: url('');
+    background-image: url('FAC_8078.jpg');
+    background-size: cover;         /* Ensures the image covers the area */
+    background-position: center;    /* Centers the image */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-attachment: scroll;  /* Allows the image to scroll with content */
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px 80px 20px;  /* Add more top padding if navbar is fixed */
     background-color: #D6C0B3;
     position: relative;
+    min-height: 60vh;               /* Ensures enough height for the image to show */
 }
 
 .hero-section::before {
@@ -316,8 +295,8 @@ h1 {
 }
 #countdown-timer {
     font-family: 'Yessica Regular', sans-serif;
-    font-size: 2.5em;
-    color: #AB886D;
+    font-size: 3.5em;
+    color: #493628;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -337,7 +316,8 @@ h1 {
     text-align: center;
 }
 .count_num {
-    font-size: 4em;
+    font-size: 5em;
+    line-height: 1;
     font-weight: bold;
     color: #AB886D;
 }
