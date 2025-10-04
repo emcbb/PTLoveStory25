@@ -272,6 +272,7 @@ h1 {
     border: none;
     cursor: pointer ;
     margin-top: 20px;
+    text-decoration: none; /* Remove underline */
 }
 
 .error-text {
